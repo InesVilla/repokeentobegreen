@@ -1,0 +1,374 @@
+/* verde3: #00938a/
+/* verde2:#009130*/
+/* verde1:#46a92d*/
+/*orange: #fea74a*/
+
+
+html {
+  font-size: 62.3%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: #46a92d;
+  background-size: cover;
+  padding-top: 100px;
+  padding bottom: 200px;
+  height: -300px;
+
+
+}
+
+header img {
+  width: 100%;
+  height: auto;
+
+}
+
+.nav-item {
+  font-size: 7rem;
+  margin-left: 200px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.nav-link {
+  color: white;
+}
+
+.collapse {
+  background-color: #46a92d;
+}
+
+.d-flex {
+  width: 1200px;
+  height: auto;
+
+}
+
+.us {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 14rem;
+  color: #fea74a;
+  margin: 50px 50px;
+  margin-top: 150px;
+  text-align: center;
+
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 4rem;
+  margin: 5%;
+  margin-bottom: 80px;
+  margin-top: 30px;
+  line-height: 1.8;
+}
+
+.our {
+  height: 2000px;
+  /*no se hace*/
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 22rem;
+  text-align: right;
+  color: white;
+  background-image: url(../images/staff.jpg);
+  background-position: bottom 1px right 8px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-shadow: 4px 2px 5px rgba(0, 0, 0, 0.55);
+
+}
+
+/*
+  como hago para que mision y vision queden una al lado de la otra
+ empieza aqui
+ 
+ */
+
+.bloques {
+  display: flex;
+}
+
+.mision {
+  background-color: #009130;
+  width: 50%;
+  height: 1000px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: left;
+  color: white;
+  text-shadow: -4px 2px 7px rgba(0, 0, 0, 0.74);
+
+}
+
+.mision h2 {
+  font-size: 9rem;
+}
+
+.mitad {
+
+  width: 90%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 5rem;
+  line-height: 1.8;
+  margin: 1;
+  padding: 1;
+
+}
+
+.vision {
+  background-color: #00938a;
+  width: 50%;
+  height: 1000px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: right;
+  color: white;
+  text-shadow: -4px 2px 7px rgba(0, 0, 0, 0.74);
+  margin-left: auto;
+}
+
+.vision h2 {
+  font-size: 9rem;
+}
+
+.otramitad {
+
+  width: 90%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 5rem;
+  line-height: 1.8;
+  margin: 1;
+  padding: 1;
+
+
+}
+
+div h2 {
+  margin: 70px 100px;
+}
+
+/* temrina aqui*/
+h3 {
+  color: #fea74a;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12rem;
+  text-shadow: -4px 2px 7px rgba(0, 0, 0, 0.74);
+  text-align: center;
+  margin-top: 90px;
+  margin-bottom: 90px;
+
+
+}
+
+.bannergov {
+  height: 3000px;
+  padding: 10px;
+  width: 100%;
+  height: auto;
+  display: block;
+
+
+}
+
+.gov {
+  background-color: #46a92d;
+  height: cover;
+}
+
+.whatapproved {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10rem;
+  text-align: center;
+  color: white;
+  padding: 200px;
+}
+
+.textgov {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 7rem;
+  margin: 150px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  line-height: 1.8;
+  color: white;
+
+}
+
+.gov1 {
+  display: flex;
+}
+
+.contenedordevideo .video {
+  display: flex;
+
+
+  justify-content: space-between;
+  width: 3000px;
+  height: 2000px;
+
+
+
+}
+
+.previa {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 5rem;
+  margin: 5%;
+  margin-bottom: 5px;
+  margin-top: 30px;
+
+}
+
+.why {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10rem;
+  text-align: center;
+  color: white;
+  padding: 200px;
+  margin-top: 200px;
+
+}
+
+
+
+.inquiere {
+  display: flex;
+  justify-content: center;
+  padding: 150px;
+
+
+}
+
+.btn {
+  font-size: 6rem;
+  color: white;
+  border-color: white;
+  padding: 80px 120px;
+  margin-bottom: 100px;
+}
+
+.previa {
+  font-size: 5rem;
+  color: white;
+  text-decoration: none;
+
+}
+
+.linkletras {
+  display: flex;
+  text-align: right;
+  font-size: 7rem;
+  color: white;
+  text-decoration: none;
+  margin-right: 350px;
+  margin-top: 30px;
+  background-color: #46a92d;
+  background-size: cover;
+}
+
+footer {
+  background-image: url(../images/footerbackground.jpg);
+  background-size: cover;
+  height: 1500px;
+  padding-bottom: 400px;
+}
+
+footer h3 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: left;
+  color: white;
+
+}
+
+iframe {
+  top: 200px;
+  right: 0;
+  width: 1800px;
+  height: 850px;
+  margin-right: 300px;
+
+}
+
+
+.contactinfo {
+  display: grid;
+  grid-template-areas:
+    "icono1 info1 iconofb map"
+    "icono2 info2 iconoig map"
+    "icono3 info3 iconoig map";
+  grid-template-columns: 10% 35% 20% 40%;
+  grid-template-rows: 500px 500px 400px;
+  grid-gap: 10px;
+}
+
+.map {
+  grid-area: map;
+  margin-top: 250px;
+  margin-right: 300px;
+}
+
+.icono1 {
+  grid-area: icono1;
+  margin-left: 180px;
+  margin-top: 90px;
+  width: 45%;
+}
+
+.icono2 {
+  grid-area: icono2;
+  margin-left: 180px;
+  width: 45%;
+}
+
+.icono3 {
+  grid-area: icono3;
+  margin-left: 180px;
+
+  width: 45%;
+}
+
+.info1 {
+  grid-area: info1;
+  font-size: 22rem;
+
+}
+
+.info2 {
+  grid-area: info2;
+  font-size: 8rem;
+  margin-top: 100px;
+
+
+}
+
+.info3 {
+  grid-area: info3;
+  font-size: 10rem;
+}
+
+.iconofb {
+  grid-area: iconogb;
+  margin-top: 150px;
+}
+
+.iconoig {
+  grid-area: iconoig;
+  margin-top: 250px;
+}
+
+
+/* Media query*/
+@media only screen and (min-width 420px) and (max-width 500px) {
+
+  .us {
+    font-size: 1px;
+  }
+
+  p {
+    font-size: 1px;
+  }
+}
