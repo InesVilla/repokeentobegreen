@@ -372,57 +372,128 @@ iframe {
 
 /*      go solar edition     */
 
-.solar{
+.solar {
   background-color: #46a92d;
   padding: 2% 1% 5% 1%;
 }
-.solar h3{
+
+.solar h3 {
   background-color: #009130;
   color: white;
   font size: 15rem;
 }
-.solar p{
+
+.solar p {
   font-size: 6rem;
   color: white;
 }
 
-.select{
+.select {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.select h1{
+
+.select h1 {
   font-size: 14rem;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   padding: 2% 1%;
 }
-.black{
+
+.black {
   padding-right: 1%;
 
 }
-.orange{
+
+.orange {
   padding-right: 1%;
   color: #fea74a;
 }
-.options{
+
+.options {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: repeat (4,10%);
+  grid-template-rows: repeat (4, 10%);
   font-size: 10rem;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   padding-left: 15%;
-  }
-  .datos{
-    color: black;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 5%;
-  }
-  .datos:hover{
-    color: #fea74a;
-  }
-  .bannercontenedor{
-    background-image: url(../images/bannergosolar.jpg);
-    background-size: cover;
-    padding:1000px;
-  }
+}
+
+.datos {
+  color: black;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 5%;
+}
+
+.datos:hover {
+  color: #fea74a;
+}
+
+.bannercontenedor {
+  background-image: url(../images/bannergosolar.jpg);
+  background-size: cover;
+  padding: 1000px;
+}
+
+.officialgov {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.officialgov h1{
+  font-size: 12rem;
+  padding-right: 1%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding: 1%;
+}
+.supplier{
+  color: #009130;
+}
+.gover{
+  color: #fea74a;
+}
+.approval{ font-size: 6rem;
+
+}
+.formcontain{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 8rem;
+  padding: 3% 5%;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 2% 5%;
+  color: white;
+background-image: url(../images/DEGRADE2.jpg);
+}
+.form{
+  padding: 1%;
+  font-size: 6rem;
+  
+}
+.lastname{
+  justify-content: right;
+  padding-left: 10%;
+}
+.phone{
+  justify-self: right;
+}
+.suburb{
+  padding-left: 10%;
+}
+input[type="radio"] {
+  width: 50px; 
+  height: 50px;
+}
+.info{
+  font-size: 6rem;
+  padding: 1% 3%;
+
+}
+.gosolarbajo{
+  padding-left: 25%;
+ padding-bottom: 5%;
+ padding-top: 3%;
+ 
+}
