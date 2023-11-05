@@ -497,3 +497,8 @@ input[type="radio"] {
  padding-top: 3%;
  
 }
+.btn{
+  padding: 1%;
+  margin-left: 20%;
+  background-color: #00938a;
+}
