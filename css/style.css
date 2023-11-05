@@ -466,25 +466,18 @@ iframe {
   padding: 2% 5%;
   color: white;
 background-image: url(../images/DEGRADE2.jpg);
+align-items: center;
 }
 .form{
   padding: 1%;
   font-size: 6rem;
   
 }
-.lastname{
-  justify-content: right;
-  padding-left: 10%;
-}
-.phone{
-  justify-self: right;
-}
-.suburb{
-  padding-left: 10%;
-}
+
 input[type="radio"] {
   width: 50px; 
   height: 50px;
+
 }
 .info{
   font-size: 6rem;
@@ -501,4 +494,5 @@ input[type="radio"] {
   padding: 1%;
   margin-left: 20%;
   background-color: #00938a;
+  color: white;
 }
