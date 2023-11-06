@@ -35,6 +35,36 @@
     </header>
 
     <main>
+      <h2>Solar Panel Calculator</h2>
+
+      <form id="solarCalculator">
+          <label for="location">Location (e.g., Sydney):</label>
+          <input type="text" id="location" name="location" required>
+  
+          <label for="efficiency">Solar Panel Efficiency (%):</label>
+          <input type="number" id="efficiency" name="efficiency" min="1" max="100" required>
+  
+          <label for="roofArea">Roof Area (m²):</label>
+          <input type="number" id="roofArea" name="roofArea" min="1" required>
+  
+          <button type="button" onclick="calculateSolarProduction()">Calculate</button>
+      </form>
+  
+      <div id="result"></div>
+  
+      <script>
+          function calculateSolarProduction() {
+              const location = document.getElementById('location').value;
+              const efficiency = parseFloat(document.getElementById('efficiency').value);
+              const roofArea = parseFloat(document.getElementById('roofArea').value);
+  
+              // Fórmula de producción solar simplificada (para propósitos ilustrativos)
+              const solarProduction = (efficiency / 100) * roofArea * 5; // Supone 5 horas de sol promedio al día
+  
+              const resultElement = document.getElementById('result');
+              resultElement.innerHTML = `<p>Estimated Solar Production in ${location}: ${solarProduction.toFixed(2)} kWh/day</p>`;
+          }
+      </script>
 
     </main>
 
