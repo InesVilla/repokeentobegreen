@@ -572,3 +572,37 @@ padding-top: 1%; }
 .other{
   background-color: #009130;
 }
+
+/*      solar calculation edition     */
+
+.calculator{
+  font-size: 12rem;
+  color: white;
+  text-align: center;
+  padding: 2%;
+}
+.solarcalculation{
+  font-size: 8rem;
+  color: white;
+  padding: 3%;
+}
+.botton{
+  background-color: #00938a;
+  color: white;
+}
+.calsol{
+  color: white;
+  font-size: 6rem;
+}
+
+/*      solar calculation edition     */
+
+.comments{
+  padding: 3%;
+}
+.square{
+  width: 1000px;
+  height: 500px;
+  justify-content: center;
+  padding-bottom: 5%;
+}

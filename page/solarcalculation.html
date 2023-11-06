@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
+<body class="other">
     <header>
         <img src="../images/banner1.jpg" alt="LogoKeen2BGreen">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -35,9 +35,10 @@
     </header>
 
     <main>
-      <h2>Solar Panel Calculator</h2>
+      <h2 class="calculator">Solar Panel Calculator</h2>
+      <p class="calsol">Our solar calculation tool empowers you to estimate the potential energy production of solar panels tailored to your specific location and roof characteristics. By inputting key details such as your geographical location, solar panel efficiency, and roof area, our calculator utilizes industry-standard formulas to generate an accurate projection of daily energy output. Whether you're a homeowner considering a residential solar installation or a business evaluating the benefits of commercial solar power, our user-friendly tool provides valuable insights. Harness the power of the sun to make informed decisions about sustainable energy for your property. Take the first step toward a greener future by exploring the possibilities with our solar calculation tool.</p>
 
-      <form id="solarCalculator">
+      <form id="solarCalculator" class="solarcalculation">
           <label for="location">Location (e.g., Sydney):</label>
           <input type="text" id="location" name="location" required>
   
@@ -47,7 +48,7 @@
           <label for="roofArea">Roof Area (m²):</label>
           <input type="number" id="roofArea" name="roofArea" min="1" required>
   
-          <button type="button" onclick="calculateSolarProduction()">Calculate</button>
+          <button type="button" onclick="calculateSolarProduction()" class="botton">Calculate</button>
       </form>
   
       <div id="result"></div>
