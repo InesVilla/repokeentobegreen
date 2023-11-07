@@ -50,6 +50,52 @@ header img {
 
 }
 
+/* Media queries*/
+
+/* Estilos para pantallas más pequeñas (celulares) */
+
+/* header*/
+
+@media  screen and (max-width: 767px) {
+
+  header {
+    background-size: contain;
+    padding-top: 50px;
+    padding bottom: 50px;
+   width: 100%;
+  }
+  
+  header img {
+    width: 120%;
+    height: auto;
+  
+  }
+  
+  .nav-item {
+    font-size: 3rem;
+    margin-left: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+  }
+  
+  .nav-link {
+    color: white;
+  }
+  
+  .collapse {
+    margin: 15%;
+  }
+  
+  .d-flex {
+    width: 20px;
+  
+  }
+ 
+  
+}
+
+/*    -------     */
+
 .us {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 14rem;
@@ -62,7 +108,7 @@ header img {
 
 p {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 4rem;
+  font-size: 6rem;
   margin: 5%;
   margin-bottom: 80px;
   margin-top: 30px;
@@ -83,7 +129,36 @@ p {
   text-shadow: 4px 2px 5px rgba(0, 0, 0, 0.55);
 
 }
+/* Media queries*/
+@media  screen and (max-width: 767px){
+  .us{
+    font-size: 6rem;
+    padding-top: 8px;
+  margin-top: 15px;
+  text-align: center;
 
+  }
+  p{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 2%;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  line-height: none;
+  padding-top: 15px;
+  }
+  .our {
+    height: 250px;
+    text-align: left;
+    background-position: bottom 0px right 0px;
+    background-size: cover;
+    -ms-wrap-margin: 100%;
+  }
+  .our h2{
+    font-size: 6rem;
+  }
+}
+/*     -------     */
 
 .bloques {
   display: flex;
@@ -145,8 +220,64 @@ p {
 div h2 {
   margin: 70px 100px;
 }
+/* Media queries*/
+@media  screen and (max-width: 767px){
 
-/* temrina aqui*/
+.bloques {
+  display: inline;
+}
+
+.mision {
+ 
+  width: 100%;
+  height: auto;
+  text-align: left;
+  color: white;
+  margin-top: -10%;
+
+}
+
+.mision h2 {
+  font-size: 5rem;
+  padding-top:  5%;
+  padding-bottom: 3%;
+}
+
+.mitad {
+  font-size: 2rem;
+  margin: 2;
+  padding-bottom: 5%;
+
+}
+
+.vision {
+  width: 100%;
+  height: auto;
+  text-align: left;
+  color: white;
+  margin-top: -10%;
+  font-size: 5rem;
+
+}
+
+.vision h2 {
+  font-size: 5rem;
+  padding-top:  5%;
+  padding-bottom: 3%;
+}
+
+.otramitad {
+
+  font-size: 2rem;
+  margin: 2;
+  padding-bottom: 5%;
+
+}
+
+}
+
+/*     -------     */
+
 h3 {
   color: #fea74a;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -193,6 +324,47 @@ h3 {
 
 }
 
+/* Media queries*/
+@media  screen and (max-width: 767px){
+  h3 {
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 90px;
+  
+  
+  }
+  
+  .bannergov {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .gov {
+    background-color: #46a92d;
+    height: cover;
+  }
+  
+  .whatapproved {
+    font-size: 8rem;
+    text-align: none;
+    padding: 20px;
+  }
+  
+  .textgov {
+    
+    font-size: 3rem;
+    margin: 10px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    line-height: 1.8;
+  }
+
+}
+
+
+/*     -------     */
+
 .gov1 {
   display: flex;
 }
@@ -208,6 +380,27 @@ h3 {
 
 
 }
+/* Media queries*/
+
+@media  screen and (max-width: 767px){
+  .gov1 {
+    display: inline;
+  }
+  
+  .contenedordevideo .video {
+    display: inline;
+  
+  
+    justify-content: center;
+    width: 700px;
+    height: 500px;
+    padding-left: 5%;
+
+}
+}
+
+/*     -------     */
+
 
 .previa {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -264,6 +457,67 @@ h3 {
   background-color: #46a92d;
   background-size: cover;
 }
+
+/* Media queries*/
+
+@media  screen and (max-width: 767px){
+  .previa {
+    font-size: 3rem;
+    margin: 52%;
+    margin-bottom: 5px;
+    margin-top: 10px;
+  
+  }
+  
+  .why {
+    font-size: 8rem;
+    text-align: none;
+    color: white;
+    padding: 20px;
+    padding-top: 20px;
+    margin-top: 20px;
+  
+  }
+  
+  
+  
+  .inquiere {
+    display: flex;
+    justify-content: center;
+    padding: 150px;
+  
+  
+  }
+  
+  .btn {
+    font-size: 3rem;
+    color: white;
+    border-color: white;
+    padding: 0px;
+    margin-bottom: 10px;
+  }
+  
+  .previa {
+    font-size: 5rem;
+    color: white;
+    text-decoration: none;
+  
+  }
+  
+  .linkletras {
+    display: flex;
+    text-align: right;
+    font-size: 7rem;
+    color: white;
+    text-decoration: none;
+    margin-right: 350px;
+    margin-top: 30px;
+    background-color: #46a92d;
+    background-size: cover;
+  }
+
+}
+/*     -------     */
 
 footer {
   background-image: url(../images/footerbackground.jpg);
@@ -354,20 +608,114 @@ iframe {
   grid-area: iconoig;
   margin-top: 250px;
 }
+/* Media queries*/
 
-
-/* Media query*/
-@media only screen and (min-width 420px) and (max-width 500px) {
-
-  .us {
-    font-size: 1px;
+@media  screen and (max-width: 767px){
+  footer {
+    background-image: url(../images/footerbackground.jpg);
+    background-size: cover;
+    height: 500px;
   }
 
-  p {
-    font-size: 1px;
+  footer h3 {
+  font-size: 6rem;
+    text-align: left;
+    color: white;
   }
+
+  iframe {
+    padding-top: 10px;
+    padding-left: 0px;
+    width: 180px;
+    height: 180px;
+    margin-left: 110px;
+  }
+
+  .contactinfo {
+    display: grid;
+    grid-template-areas:
+      "icono1 info1 iconofb"
+      "icono2 info2 iconoig"
+      "icono3 info3 iconoig";
+    grid-template-columns: 10% 50% 40%;
+    grid-template-rows: 80px 80px 80px;
+    grid-gap: 15px;
+  }
+
+  .map {
+    grid-area: map;
+    margin-top: 150px;
+    margin-right: 10px;
+
+  }
+  
+  .icono1 {
+    grid-area: icono1;
+    margin-left: 18px;
+    margin-top: 15px;
+    width: 70%;
+  }
+  
+  .icono2 {
+    grid-area: icono2;
+    margin-left: 18px;
+    margin-top: 90px;
+    width: 70%;
+  }
+  
+  .icono3 {
+    grid-area: icono3;
+    margin-left: 18px;
+    margin-top: 150px;
+  
+    width: 70%;
+  }
+  
+  .info1 {
+    grid-area: info1;
+    font-size: 4rem;
+    margin-left: 18px;
+    margin-top: 15px;
+    width: 70%;
+  
+  }
+  
+  .info2 {
+    grid-area: info2;
+    font-size: 2rem;
+    margin-top: 100px;
+    margin-top: 90px;
+  
+  
+  }
+  
+  .info3 {
+    grid-area: info3;
+    font-size: 2rem;
+    margin-top: 160px;
+  }
+  
+  .iconofb {
+    grid-area: iconogb;
+    margin-top: 50px;
+    width: 40%;
+    padding-left: 30px;
+  }
+  
+  .iconoig {
+    grid-area: iconoig;
+    margin-top: 10px;
+    width: 40%;
+    padding-left: 30px;
+  }
+
+  
 }
 
+
+/*     -------     */
+
+ 
 
 
 /*      go solar edition     */
