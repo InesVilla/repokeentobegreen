@@ -9,9 +9,15 @@ html {
 }
 
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+.content {
+  max-width: 1000px; /* o cualquier otro valor que desees */
+  margin: 0 auto; /* centra el contenido */
+}
+
 
 header {
   background-color: #46a92d;
@@ -71,25 +77,6 @@ header img {
   
   }
   
-  .nav-item {
-    font-size: 3rem;
-    margin-left: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  
-  }
-  
-  .nav-link {
-    color: white;
-  }
-  
-  .collapse {
-    margin: 15%;
-  }
-  
-  .d-flex {
-    width: 20px;
-  
-  }
  
   
 }
@@ -97,7 +84,8 @@ header img {
 /*    -------     */
 
 .us {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
   font-size: 14rem;
   color: #fea74a;
   margin: 50px 50px;
@@ -111,13 +99,13 @@ p {
   font-size: 6rem;
   margin: 5%;
   margin-bottom: 80px;
-  margin-top: 30px;
+  margin-top: 10px;
   line-height: 1.8;
 }
 
+
 .our {
   height: 2000px;
-  /*no se hace*/
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 22rem;
   text-align: right;
@@ -132,18 +120,19 @@ p {
 /* Media queries*/
 @media  screen and (max-width: 767px){
   .us{
-    font-size: 6rem;
+    font-size: 3rem;
     padding-top: 8px;
   margin-top: 15px;
+  margin-bottom: 25px;
   text-align: center;
 
   }
   p{
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: center;
     margin: 2%;
   margin-bottom: 10px;
-  margin-top: 0px;
+  margin-top: -20px;
   line-height: none;
   padding-top: 15px;
   }
@@ -282,7 +271,8 @@ h3 {
   color: #fea74a;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 12rem;
-  text-shadow: -4px 2px 7px rgba(0, 0, 0, 0.74);
+  /*text-shadow: -4px 2px 7px rgba(0, 0, 0, 0.74);*/
+  font-weight: bolder;
   text-align: center;
   margin-top: 90px;
   margin-bottom: 90px;
@@ -327,7 +317,7 @@ h3 {
 /* Media queries*/
 @media  screen and (max-width: 767px){
   h3 {
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: center;
     margin-top: 90px;
     margin-bottom: 90px;
@@ -346,14 +336,14 @@ h3 {
   }
   
   .whatapproved {
-    font-size: 8rem;
+    font-size: 4rem;
     text-align: none;
     padding: 20px;
   }
   
   .textgov {
     
-    font-size: 3rem;
+    font-size: 1rem;
     margin: 10px;
     margin-bottom: 3px;
     margin-top: 3px;
@@ -392,9 +382,9 @@ h3 {
   
   
     justify-content: center;
-    width: 700px;
-    height: 500px;
-    padding-left: 5%;
+    width: 530px;
+    height: auto;
+    padding-left: 0;
 
 }
 }
@@ -470,7 +460,7 @@ h3 {
   }
   
   .why {
-    font-size: 8rem;
+    font-size: 5rem;
     text-align: none;
     color: white;
     padding: 20px;
@@ -484,17 +474,18 @@ h3 {
   .inquiere {
     display: flex;
     justify-content: center;
-    padding: 150px;
+    padding: 50px;
   
   
   }
   
   .btn {
-    font-size: 3rem;
+    font-size: 2rem;
     color: white;
     border-color: white;
     padding: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+    align-items: center;
   }
   
   .previa {
@@ -507,7 +498,7 @@ h3 {
   .linkletras {
     display: flex;
     text-align: right;
-    font-size: 7rem;
+    font-size: 5rem;
     color: white;
     text-decoration: none;
     margin-right: 350px;
@@ -624,11 +615,7 @@ iframe {
   }
 
   iframe {
-    padding-top: 10px;
-    padding-left: 0px;
-    width: 180px;
-    height: 180px;
-    margin-left: 110px;
+    display: none;
   }
 
   .contactinfo {
@@ -636,7 +623,7 @@ iframe {
     grid-template-areas:
       "icono1 info1 iconofb"
       "icono2 info2 iconoig"
-      "icono3 info3 iconoig";
+      "icono3 info3 icono";
     grid-template-columns: 10% 50% 40%;
     grid-template-rows: 80px 80px 80px;
     grid-gap: 15px;
@@ -696,17 +683,20 @@ iframe {
   }
   
   .iconofb {
-    grid-area: iconogb;
+    grid-area: iconofb;
     margin-top: 50px;
-    width: 40%;
+    width: 50%;
     padding-left: 30px;
   }
   
   .iconoig {
     grid-area: iconoig;
-    margin-top: 10px;
-    width: 40%;
-    padding-left: 30px;
+    width: 65px;
+   
+    margin-left: -190px;
+    margin-top: 250px;
+    
+    
   }
 
   
