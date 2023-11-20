@@ -3,6 +3,9 @@
 /* verde1:#46a92d*/
 /*orange: #fea74a*/
 
+body {
+  overflow-x: hidden;
+}
 
 html {
   font-size: 62.3%;
