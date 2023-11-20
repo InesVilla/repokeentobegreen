@@ -123,8 +123,7 @@ p {
 .bloques {
   display: flex;
 }
-
-.mision {
+.bloques .mision {
   background-color: #009130;
   width: 50%;
   height: 1000px;
@@ -133,10 +132,10 @@ p {
   color: white;
   text-shadow: -4px 2px 7px rgba(0, 0, 0, 0.74);
 }
-.mision h2 {
+.bloques .mision h2 {
   font-size: 9rem;
 }
-.mision .mitad {
+.bloques .mision .mitad {
   width: 90%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 5rem;
@@ -144,8 +143,7 @@ p {
   margin: 1;
   padding: 1;
 }
-
-.vision {
+.bloques .vision {
   background-color: #00938a;
   width: 50%;
   height: 1000px;
@@ -155,10 +153,10 @@ p {
   text-shadow: -4px 2px 7px rgba(0, 0, 0, 0.74);
   margin-left: auto;
 }
-.vision h2 {
+.bloques .vision h2 {
   font-size: 9rem;
 }
-.vision .otramitad {
+.bloques .vision .otramitad {
   width: 90%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 5rem;
@@ -166,8 +164,7 @@ p {
   margin: 1;
   padding: 1;
 }
-
-div h2 {
+.bloques div h2 {
   margin: 70px 100px;
 }
 

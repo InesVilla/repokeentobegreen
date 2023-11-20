@@ -130,9 +130,11 @@ body {
       }
     }
   }
+
+
   .bloques {
     display: flex;
-  }
+  
   
   .mision {
     background-color: #009130;
@@ -184,6 +186,7 @@ body {
   div h2 {
     margin: 70px 100px;
   }
+}
   
   /* Media queries */
   @media screen and (max-width: 767px) {
@@ -232,6 +235,8 @@ body {
       }
     }
   }
+
+
   // Variables
 $color-destacado: #fea74a;
 $color-fondo-gov: #46a92d;
