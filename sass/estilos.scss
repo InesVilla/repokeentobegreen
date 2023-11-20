@@ -1,14 +1,203 @@
 
 
-header{
+body {
+    overflow-x: hidden;
+  }
+  
+  html {
+    font-size: 62.3%;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .content {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  header {
     background-color: #46a92d;
-  background-size: cover;
-  padding-top: 100px;
-  padding bottom: 200px;
-  height: -300px;
-  img{
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    height: -300px;
+  }
+  
+  header img {
     width: 100%;
     height: auto;
   }
-}
-body { overflow-x: hidden; }
+  
+  .nav-item {
+    font-size: 7rem;
+    margin-left: 200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .nav-link {
+    color: white;
+  }
+  
+  .collapse {
+    background-color: #46a92d;
+  }
+  
+  .d-flex {
+    width: 1200px;
+    height: auto;
+  }
+  
+  // Media queries para pantallas más pequeñas (celulares)
+  @media screen and (max-width: 767px) {
+    header {
+      background-size: contain;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      width: 100%;
+    }
+  
+    header img {
+      width: 120%;
+      height: auto;
+    }
+  }
+  
+  // Estilos para la sección "us"
+  .us {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: 14rem;
+    color: #fea74a;
+    margin: 50px 50px;
+    margin-top: 150px;
+    text-align: center;
+  }
+  
+  // Otros estilos...
+  
+  // Media queries para pantallas más pequeñas (celulares)
+  @media screen and (max-width: 767px) {
+    .us {
+      font-size: 3rem;
+      padding-top: 8px;
+      margin-top: 15px;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+  
+    // Otros estilos para pantallas más pequeñas...
+  }
+  
+  // Estilos para la sección "bloques"
+  .bloques {
+    display: flex;
+  }
+  
+  // Otros estilos...
+  
+  // Media queries para pantallas más pequeñas (celulares)
+  @media screen and (max-width: 767px) {
+    .bloques {
+      display: inline;
+    }
+  
+    // Otros estilos para pantallas más pequeñas...
+  }
+  
+  // Otros estilos y media queries...
+  
+  // Estilos para la sección "footer"
+  footer {
+    background-image: url(../images/footerbackground.jpg);
+    background-size: cover;
+    height: 1500px;
+    padding-bottom: 400px;
+  }
+  
+  // Otros estilos...
+  
+  // Media queries para pantallas más pequeñas (celulares)
+  @media screen and (max-width: 767px) {
+    footer {
+      background-image: url(../images/footerbackground.jpg);
+      background-size: cover;
+      height: 500px;
+    }
+  
+    // Otros estilos para pantallas más pequeñas...
+  }
+  
+  // Otros estilos y media queries...
+  
+  // Estilos para la sección "solar"
+  .solar {
+    background-color: #46a92d;
+    padding: 2% 1% 5% 1%;
+  }
+  
+  // Otros estilos...
+  
+  // Media queries para pantallas más pequeñas (celulares)
+  @media screen and (max-width: 767px) {
+    .solar {
+      // Estilos para pantallas más pequeñas...
+    }
+  
+    // Otros estilos para pantallas más pequeñas...
+  }
+  
+  // Otros estilos...
+  
+  // Estilos para la sección "other services"
+  .tittle {
+    background-color: #46a92d;
+    padding: 2%;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 12rem;
+    text-align: center;
+  }
+  
+  // Otros estilos...
+  
+  // Media queries para pantallas más pequeñas (celulares)
+  @media screen and (max-width: 767px) {
+    .tittle {
+      // Estilos para pantallas más pequeñas...
+    }
+  
+    // Otros estilos para pantallas más pequeñas...
+  }
+  
+  // Otros estilos y media queries...
+  
+  // Estilos para la sección "calculator"
+  .calculator {
+    font-size: 12rem;
+    color: white;
+    text-align: center;
+    padding: 2%;
+  }
+  
+  // Otros estilos...
+  
+  // Media queries para pantallas más pequeñas (celulares)
+  @media screen and (max-width: 767px) {
+    .calculator {
+      // Estilos para pantallas más pequeñas...
+    }
+  
+    // Otros estilos para pantallas más pequeñas...
+  }
+  
+  // Otros estilos...
+  
+  // Estilos para la sección "comments"
+  .comments {
+    padding: 3%;
+  }
+  
