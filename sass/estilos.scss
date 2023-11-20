@@ -1,0 +1,326 @@
+$color-destacado: #fea74a;
+$color-fondo-gov: #46a92d;
+$color-texto-gov: white;
+$footer-background: url(../images/footerbackground.jpg) center/cover no-repeat;
+$font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+$color-text: white;
+$color-fondo-link: #46a92d;
+
+html {
+    font-size: 62.3%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: $color-fondo-gov;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 200px;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .nav-item {
+        font-size: 7rem;
+        margin-left: 200px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .nav-link {
+        color: white;
+    }
+
+    .collapse {
+        background-color: $color-fondo-gov;
+    }
+
+    .d-flex {
+        width: 1200px;
+        height: auto;
+    }
+}
+
+//media Q//
+@media screen and (max-width: 767px) {
+    header {
+        background-size: contain;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        width: 50%;
+
+        img {
+            width: 120%;
+            height: auto;
+        }
+    }
+}
+
+.us {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: 14rem;
+    color: #fea74a;
+    margin: 50px 50px;
+    margin-top: 150px;
+    text-align: center;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+  font-size: 6rem;
+  margin: 5%;
+  margin-bottom: 80px;
+  margin-top: 10px;
+  line-height: 1.8;
+  }
+  .our {
+    height: 2000px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 22rem;
+  text-align: right;
+  color: white;
+  background-image: url(../images/staff.jpg);
+  background-position: bottom 1px right 8px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-shadow: 4px 2px 5px rgba(0, 0, 0, 0.55);
+  }
+  // Media queries //
+@media  screen and (max-width: 767px){
+    .us{
+      font-size: 3rem;
+      padding-top: 8px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+  
+    }
+    p{
+      font-size: 1rem;
+      text-align: center;
+      margin: 2%;
+    margin-bottom: 10px;
+    margin-top: -20px;
+    line-height: none;
+    padding-top: 15px;
+    }
+    .our {
+      height: 250px;
+      text-align: left;
+      background-position: bottom 0px right 0px;
+      background-size: cover;
+      -ms-wrap-margin: 100%;
+      h2{
+        font-size: 6rem;
+      }
+    }
+   
+  }
+  
+.bloques {
+    display: flex;
+  }
+  
+  .mision {
+    background-color: #009130;
+    width: 50%;
+    height: 1000px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: left;
+    color: white;
+    text-shadow: -4px 2px 7px rgba(0, 0, 0, 0.74);
+    h2 {
+        font-size: 9rem;
+      }
+      .mitad {
+  
+        width: 90%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 5rem;
+        line-height: 1.8;
+        margin: 1;
+        padding: 1;
+      
+      }    
+  }
+  
+.vision {
+    background-color: #00938a;
+    width: 50%;
+    height: 1000px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: right;
+    color: white;
+    text-shadow: -4px 2px 7px rgba(0, 0, 0, 0.74);
+    margin-left: auto;
+
+    h2 {
+        font-size: 9rem;
+      }
+      
+
+    .otramitad {
+  
+        width: 90%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 5rem;
+        line-height: 1.8;
+        margin: 1;
+        padding: 1;
+      
+      
+      }
+  }
+ 
+  div h2 {
+    margin: 70px 100px;
+  }
+    // Media queries //
+    
+@media  screen and (max-width: 767px){
+
+    .bloques {
+      display: inline;
+    }
+    
+    .mision {
+     
+      width: 100%;
+      height: auto;
+      text-align: left;
+      color: white;
+      margin-top: -10%;
+      h2 {
+        font-size: 5rem;
+        padding-top:  5%;
+        padding-bottom: 3%;
+      }
+      .mitad {
+        font-size: 2rem;
+        margin: 2;
+        padding-bottom: 5%;
+      
+      }
+    }
+     
+    .vision {
+      width: 100%;
+      height: auto;
+      text-align: left;
+      color: white;
+      margin-top: -10%;
+      font-size: 5rem;
+      h2 {
+        font-size: 5rem;
+        padding-top:  5%;
+        padding-bottom: 3%;
+      }
+      .otramitad {
+    
+        font-size: 2rem;
+        margin: 2;
+        padding-bottom: 5%;
+      
+      }
+    }
+    }
+    
+h3 {
+    color: #fea74a;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 90px;
+  
+  
+  }
+  
+ 
+  
+  .gov {
+    background-color: #46a92d;
+    height: cover;
+    .bannergov {
+        height: 3000px;
+        padding: 10px;
+        width: 100%;
+        height: auto;
+        display: block;
+      
+      
+      }
+      .whatapproved {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 10rem;
+        text-align: center;
+        color: white;
+        padding: 200px;
+      }
+      .textgov {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 7rem;
+        margin: 150px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        line-height: 1.8;
+        color: white;
+      
+      }
+  }
+  
+      // Media queries //
+  
+@media  screen and (max-width: 767px){
+    h3 {
+      font-size: 4rem;
+      text-align: center;
+      margin-top: 90px;
+      margin-bottom: 90px;
+    
+    
+    }
+     
+    .gov {
+      background-color: #46a92d;
+      height: cover;
+      .bannergov {
+        height: 100%;
+        width: 100%;
+    }
+        .whatapproved {
+            font-size: 4rem;
+            text-align: none;
+            padding: 20px;
+          }
+          
+          .textgov {
+            
+            font-size: 1rem;
+            margin: 10px;
+            margin-bottom: 3px;
+            margin-top: 3px;
+            line-height: 1.8;
+          }
+      }
+    }   
+  
+ 
+  
+  
