@@ -1,154 +1,175 @@
+b
+¡Por supuesto! Aquí tienes la hoja SCSS reescrita con algunas mejoras en la organización y la estructura del código:
+
+scss
+Copy code
+/* Variables */
+$color-destacado: #fea74a;
+$color-fondo-gov: #46a92d;
+$color-texto-gov: white;
+$footer-background: url(../images/footerbackground.jpg) center/cover no-repeat;
+$font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+$color-text: white;
+$color-fondo-link: #46a92d;
+
+/* Estilos base */
+html {
+  font-size: 62.3%;
+}
+
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Contenedor principal */
+.content {
+  max-width: 1000px; // o cualquier otro valor que desees
+  margin: 0 auto; // centra el contenido
+}
+
+/* Header */
+header {
+  background-color: $color-fondo-gov;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 200px;
+
+  img {
+    width: 100%;
+    height: auto;
   }
-  
-  html {
-    font-size: 62.3%;
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .content {
-    max-width: 1000px; // o cualquier otro valor que desees
-    margin: 0 auto; // centra el contenido
-  }
-  
-  header {
-    background-color: #46a92d;
-    background-size: cover;
-    padding-top: 100px;
-    padding-bottom: 200px;
-    height: -300px;
-  
-    img {
-      width: 100%;
-      height: auto;
-    }
-  
-  
+
   .nav-item {
     font-size: 7rem;
     margin-left: 200px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
-  
+
   .nav-link {
     color: white;
   }
-  
+
   .collapse {
-    background-color: #46a92d;
+    background-color: $color-fondo-gov;
   }
-  
+
   .d-flex {
     width: 1200px;
     height: auto;
   }
 }
-  
-  // Media queries
-  // Estilos para pantallas más pequeñas (celulares)
-  
-  // Header
-  @media screen and (max-width: 767px) {
-    header {
-      background-size: contain;
-      padding-top: 50px;
-      padding-bottom: 50px;
-      width: 100%;
-  
-      img {
-        width: 120%;
-        height: auto;
-      }
-    }
-  }
-  .us {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bolder;
-    font-size: 14rem;
-    color: #fea74a;
-    margin: 50px 50px;
-    margin-top: 150px;
-    text-align: center;
-  
-    // Media queries
-    @media screen and (max-width: 767px) {
-      font-size: 3rem;
-      padding-top: 8px;
-      margin-top: 15px;
-      margin-bottom: 25px;
-      text-align: center;
-    }
-  }
-  
-  p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 6rem;
-    margin: 5%;
-    margin-bottom: 80px;
-    margin-top: 10px;
-    line-height: 1.8;
-  
-    // Media queries
-    @media screen and (max-width: 767px) {
-      font-size: 1rem;
-      text-align: center;
-      margin: 2%;
-      margin-bottom: 10px;
-      margin-top: -20px;
-      line-height: none;
-      padding-top: 15px;
-    }
-  }
-  
-  .our {
-    height: 2000px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 22rem;
-    text-align: right;
-    color: white;
-    background-image: url(../images/staff.jpg);
-    background-position: bottom 1px right 8px;
+
+/* Media queries para pantallas más pequeñas (celulares) */
+@media screen and (max-width: 767px) {
+  header {
     background-size: contain;
-    background-repeat: no-repeat;
-    text-shadow: 4px 2px 5px rgba(0, 0, 0, 0.55);
-  
-    // Media queries
-    @media screen and (max-width: 767px) {
-      height: 250px;
-      text-align: left;
-      background-position: bottom 0px right 0px;
-      background-size: cover;
-      -ms-wrap-margin: 100%;
-      h2 {
-        font-size: 6rem;
-      }
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 50%;
+
+    img {
+      width: 120%;
+      height: auto;
     }
   }
 
+  /* Resto del código aquí ... */
+}
 
-  .bloques {
-    display: flex;
-  
-  
-  .mision {
-    background-color: #009130;
+/* Sección "Know About Us" */
+.us {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  font-size: 14rem;
+  color: $color-destacado;
+  margin: 50px 50px;
+  margin-top: 150px;
+  text-align: center;
+
+  /* Media queries */
+  @media screen and (max-width: 767px) {
+    font-size: 3rem;
+    padding-top: 8px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 6rem;
+  margin: 5%;
+  margin-bottom: 80px;
+  margin-top: 10px;
+  line-height: 1.8;
+
+  /* Media queries */
+  @media screen and (max-width: 767px) {
+    font-size: 1rem;
+    text-align: center;
+    margin: 2%;
+    margin-bottom: 10px;
+    margin-top: -20px;
+    line-height: none;
+    padding-top: 15px;
+  }
+}
+
+/* Sección "Our Team" */
+.our {
+  height: 2000px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 22rem;
+  text-align: right;
+  color: white;
+  background-image: url(../images/staff.jpg);
+  background-position: bottom 1px right 8px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-shadow: 4px 2px 5px rgba(0, 0, 0, 0.55);
+
+  /* Media queries */
+  @media screen and (max-width: 767px) {
+    height: 250px;
+    text-align: left;
+    background-position: bottom 0px right 0px;
+    background-size: cover;
+    -ms-wrap-margin: 100%;
+
+    h2 {
+      font-size: 6rem;
+    }
+  }
+}
+
+/* Sección "Mision" y "Vision" */
+.bloques {
+  display: flex;
+
+  .mision,
+  .vision {
     width: 50%;
     height: 1000px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: left;
     color: white;
     text-shadow: -4px 2px 7px rgba(0, 0, 0, 0.74);
-  
+
     h2 {
       font-size: 9rem;
     }
-  
+  }
+
+  .mision {
+    background-color: #009130;
+    text-align: left;
+
     .mitad {
       width: 90%;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -158,21 +179,12 @@ body {
       padding: 1;
     }
   }
-  
+
   .vision {
     background-color: #00938a;
-    width: 50%;
-    height: 1000px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: right;
-    color: white;
-    text-shadow: -4px 2px 7px rgba(0, 0, 0, 0.74);
     margin-left: auto;
-  
-    h2 {
-      font-size: 9rem;
-    }
-  
+
     .otramitad {
       width: 90%;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -182,52 +194,45 @@ body {
       padding: 1;
     }
   }
-  
+
   div h2 {
     margin: 70px 100px;
   }
 }
-  
-  /* Media queries */
-  @media screen and (max-width: 767px) {
-    .bloques {
-      display: inline;
-    }
-  
-    .mision {
-      width: 100%;
-      height: auto;
-      text-align: left;
-      color: white;
-      margin-top: -10%;
-  
-      h2 {
-        font-size: 5rem;
-        padding-top: 5%;
-        padding-bottom: 3%;
-      }
-  
-      .mitad {
-        font-size: 2rem;
-        margin: 2;
-        padding-bottom: 5%;
-      }
-    }
-  
+
+/* Media queries */
+@media screen and (max-width: 767px) {
+  .bloques {
+    display: inline;
+
+    .mision,
     .vision {
       width: 100%;
       height: auto;
       text-align: left;
       color: white;
       margin-top: -10%;
-      font-size: 5rem;
-  
+
       h2 {
         font-size: 5rem;
         padding-top: 5%;
         padding-bottom: 3%;
       }
-  
+
+      .mitad {
+        font-size: 2rem;
+        margin: 2;
+        padding-bottom: 5%;
+      }
+    }
+
+    .vision {
+      h2 {
+        font-size: 5rem;
+        padding-top: 5%;
+        padding-bottom: 3%;
+      }
+
       .otramitad {
         font-size: 2rem;
         margin: 2;
@@ -235,195 +240,104 @@ body {
       }
     }
   }
-
-
-  // Variables
-$color-destacado: #fea74a;
-$color-fondo-gov: #46a92d;
-$color-texto-gov: white;
-
-// Estilos base
-h3 {
-  color: $color-destacado;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 12rem;
-  font-weight: bolder;
-  text-align: center;
-  margin-top: 90px;
-  margin-bottom: 90px;
 }
 
-.bannergov {
-  height: 3000px;
-  padding: 10px;
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
+/* Sección "Keen 2B Green is an official Clean Energy Council Approved Solar Retailer" */
 .gov {
   background-color: $color-fondo-gov;
   height: cover;
-}
-
-.whatapproved {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 10rem;
-  text-align: center;
-  color: $color-texto-gov;
-  padding: 200px;
-}
-
-.textgov {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 7rem;
-  margin: 150px;
-  margin-bottom: 30px;
-  margin-top: 30px;
-  line-height: 1.8;
-  color: $color-texto-gov;
-}
-
-// Media queries
-@media screen and (max-width: 767px) {
-  h3 {
-    font-size: 4rem;
-    text-align: center;
-    margin-top: 90px;
-    margin-bottom: 90px;
-  }
 
   .bannergov {
-    height: 100%;
+    height: 3000px;
+    padding: 10px;
     width: 100%;
-  }
-
-  .gov {
-    background-color: $color-fondo-gov;
-    height: cover;
+    height: auto;
+    display: block;
   }
 
   .whatapproved {
-    font-size: 4rem;
-    text-align: none;
-    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10rem;
+    text-align: center;
+    color: $color-texto-gov;
+    padding: 200px;
   }
 
   .textgov {
-    font-size: 1rem;
-    margin: 10px;
-    margin-bottom: 3px;
-    margin-top: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 7rem;
+    margin: 150px;
+    margin-bottom: 30px;
+    margin-top: 30px;
     line-height: 1.8;
+    color: $color-texto-gov;
+  }
+
+  /* Media queries */
+  @media screen and (max-width: 767px) {
+    .gov {
+      background-color: $color-fondo-gov;
+      height: cover;
+    }
+
+    .whatapproved {
+      font-size: 4rem;
+      text-align: none;
+      padding: 20px;
+    }
+
+    .textgov {
+      font-size: 1rem;
+      margin: 10px;
+      margin-bottom: 3px;
+      margin-top: 3px;
+      line-height: 1.8;
+    }
   }
 }
-// Variables
-$color-texto: white;
-$color-fondo-link: #46a92d;
 
-// Estilos base
+/* Sección "Keen 2B Green - Why Choose Us?" */
 .gov1 {
   display: flex;
-}
 
-.contenedordevideo .video {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.previa {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 5rem;
-  margin: 5%;
-  margin-bottom: 5px;
-  margin-top: 30px;
-  color: $color-texto;
-}
-
-.why {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 10rem;
-  text-align: center;
-  color: $color-texto;
-  padding: 200px;
-  margin-top: 200px;
-}
-
-.inquiere {
-  display: flex;
-  justify-content: center;
-  padding: 150px;
-}
-
-.btn {
-  font-size: 6rem;
-  color: $color-texto;
-  border-color: $color-texto;
-  padding: 80px 120px;
-  margin-bottom: 100px;
-}
-
-.previa {
-  font-size: 5rem;
-  color: $color-texto;
-  text-decoration: none;
-}
-
-.linkletras {
-  display: flex;
-  text-align: right;
-  font-size: 7rem;
-  color: $color-texto;
-  text-decoration: none;
-  margin-right: 350px;
-  margin-top: 30px;
-  background-color: $color-fondo-link;
-  background-size: cover;
-}
-
-// Media queries
-@media screen and (max-width: 767px) {
-  .gov1 {
-    display: inline;
-  }
-
-  .contenedordevideo .video {
-    display: inline;
-    justify-content: center;
-    width: 100%;
-    height: 200px;
+  .contenedordevideo {
+    .video {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
   }
 
   .previa {
-    font-size: 3rem;
-    margin: 52%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5rem;
+    margin: 5%;
     margin-bottom: 5px;
-    margin-top: 10px;
+    margin-top: 30px;
+    color: $color-texto;
   }
 
   .why {
-    font-size: 5rem;
-    text-align: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10rem;
+    text-align: center;
     color: $color-texto;
-    padding: 20px;
-    padding-top: 20px;
-    margin-top: 20px;
+    padding: 200px;
+    margin-top: 200px;
   }
 
   .inquiere {
     display: flex;
     justify-content: center;
-    padding: 50px;
+    padding: 150px;
   }
 
   .btn {
-    font-size: 2rem;
+    font-size: 6rem;
     color: $color-texto;
     border-color: $color-texto;
-    padding: 0px;
-    margin-bottom: 0px;
-    align-items: center;
+    padding: 80px 120px;
+    margin-bottom: 100px;
   }
 
   .previa {
@@ -435,7 +349,7 @@ $color-fondo-link: #46a92d;
   .linkletras {
     display: flex;
     text-align: right;
-    font-size: 5rem;
+    font-size: 7rem;
     color: $color-texto;
     text-decoration: none;
     margin-right: 350px;
@@ -443,13 +357,72 @@ $color-fondo-link: #46a92d;
     background-color: $color-fondo-link;
     background-size: cover;
   }
-}
-// Variables
-$footer-background: url(../images/footerbackground.jpg) center/cover no-repeat;
-$font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-$color-text: white;
 
-// Estilos base
+  /* Media queries */
+  @media screen and (max-width: 767px) {
+    .gov1 {
+      display: inline;
+    }
+
+    .contenedordevideo .video {
+      display: inline;
+      justify-content: center;
+      width: 100%;
+      height: 200px;
+    }
+
+    .previa {
+      font-size: 3rem;
+      margin: 52%;
+      margin-bottom: 5px;
+      margin-top: 10px;
+    }
+
+    .why {
+      font-size: 5rem;
+      text-align: none;
+      color: $color-texto;
+      padding: 20px;
+      padding-top: 20px;
+      margin-top: 20px;
+    }
+
+    .inquiere {
+      display: flex;
+      justify-content: center;
+      padding: 50px;
+    }
+
+    .btn {
+      font-size: 2rem;
+      color: $color-texto;
+      border-color: $color-texto;
+      padding: 0px;
+      margin-bottom: 0px;
+      align-items: center;
+    }
+
+    .previa {
+      font-size: 5rem;
+      color: $color-texto;
+      text-decoration: none;
+    }
+
+    .linkletras {
+      display: flex;
+      text-align: right;
+      font-size: 5rem;
+      color: $color-texto;
+      text-decoration: none;
+      margin-right: 350px;
+      margin-top: 30px;
+      background-color: $color-fondo-link;
+      background-size: cover;
+    }
+  }
+}
+
+/* Sección "Contact Us" */
 footer {
   background: $footer-background;
   height: 1500px;
@@ -487,7 +460,9 @@ footer {
       margin-right: 300px;
     }
 
-    .icono1, .icono2, .icono3 {
+    .icono1,
+    .icono2,
+    .icono3 {
       margin-left: 180px;
       width: 45%;
     }
@@ -519,24 +494,24 @@ footer {
     }
   }
 
-  // Media queries
+  /* Media queries */
   @media screen and (max-width: 767px) {
     $footer-background: url(../images/footerbackground.jpg) no-repeat;
     $font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     $color-text: white;
-    
+
     footer {
       background: $footer-background;
       height: 1500px;
       padding-bottom: 400px;
-    
+
       h3 {
         font-family: $font-family;
         text-align: left;
         color: $color-text;
         font-size: 22rem;
       }
-    
+
       iframe {
         top: 200px;
         right: 0;
@@ -545,117 +520,11 @@ footer {
         margin-right: 300px;
         display: grid;
       }
-    
+
       .contactinfo {
         display: grid;
         grid-template-areas:
           "icono1 info1 iconofb map"
           "icono2 info2 iconoig map"
           "icono3 info3 iconoig map";
-        grid-template-columns: 10% 35% 20% 40%;
-        grid-template-rows: 500px 500px 400px;
-        grid-gap: 10px;
-    
-        .map {
-          grid-area: map;
-          margin-top: 250px;
-          margin-right: 300px;
-        }
-    
-        .icono1, .icono2, .icono3 {
-          margin-left: 180px;
-          width: 45%;
-        }
-    
-        .info1 {
-          grid-area: info1;
-          font-size: 22rem;
-        }
-    
-        .info2 {
-          grid-area: info2;
-          font-size: 8rem;
-          margin-top: 100px;
-        }
-    
-        .info3 {
-          grid-area: info3;
-          font-size: 10rem;
-        }
-    
-        .iconofb {
-          grid-area: iconogb;
-          margin-top: 150px;
-        }
-    
-        .iconoig {
-          grid-area: iconoig;
-          margin-top: 250px;
-        }
-      }
-    
-      @media screen and (max-width: 767px) {
-        height: 500px;
-    
-        h3 {
-          font-size: 6rem;
-        }
-    
-        iframe {
-          display: none;
-        }
-    
-        .contactinfo {
-          display: grid;
-          grid-template-areas:
-            "icono1 info1 iconofb"
-            "icono2 info2 iconoig"
-            "icono3 info3 icono";
-          grid-template-columns: 10% 50% 40%;
-          grid-template-rows: 80px 80px 80px;
-          grid-gap: 15px;
-    
-          .map {
-            grid-area: map;
-            margin-top: 150px;
-            margin-right: 10px;
-          }
-    
-          .icono1, .icono2, .icono3 {
-            margin-left: 18px;
-            width: 70%;
-          }
-    
-          .info1 {
-            font-size: 4rem;
-            margin-left: 18px;
-            margin-top: 15px;
-            width: 70%;
-          }
-    
-          .info2 {
-            font-size: 2rem;
-            margin-top: 90px;
-          }
-    
-          .info3 {
-            font-size: 2rem;
-            margin-top: 160px;
-          }
-    
-          .iconofb {
-            margin-top: 50px;
-            width: 50%;
-            padding-left: 30px;
-          }
-    
-          .iconoig {
-            width: 65px;
-            margin-left: -190px;
-            margin-top: 250px;
-          }
-        }
-      }
-    }
-  }
-}
+        grid-template-columns: 10% 35% 20% 40}
