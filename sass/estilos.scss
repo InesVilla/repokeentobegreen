@@ -62,7 +62,7 @@ header {
         background-size: contain;
         padding-top: 50px;
         padding-bottom: 50px;
-        width: 80%;
+        width: 100%;
 
         img {
             width: 120%;
@@ -127,7 +127,7 @@ p{
       -ms-wrap-margin: 100%;
       h2{
         font-size: 6rem;
-        text-align: right;
+        text-align: left;
       }
     }
    
@@ -490,6 +490,7 @@ h3 {
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         text-align: left;
         color: white;
+        text-shadow: -4px 2px 7px rgba(0, 0, 0, 0.74);
       
       }
       
@@ -573,100 +574,69 @@ h3 {
 
   // Media Queries//
   
-@media  screen and (max-width: 767px){
-    footer {
-        background-image: url(../images/footerbackground.jpg);
-        background-size: cover;
-        height: 500px;
-      }
-    
-      footer h3 {
-      font-size: 6rem;
-        text-align: left;
-        color: white;
-      }
-    
-      iframe {
-        display: none;
-      }
-    
-      .contactinfo {
+  @media screen and (max-width: 767px) {
+  footer {
+    background-image: url(../images/footerbackground.jpg);
+    background-size: cover;
+    height: auto; // Ajusta la altura según el contenido //
+    padding-bottom: 20px; // Ajusta el espacio inferior según tus necesidades //
+
+    h3 {
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      text-align: left;
+      color: white;
+    }
+
+    iframe {
+      display: none;
+    }
+
+    .contactinfo {
         display: grid;
         grid-template-areas:
-          "icono1 info1 iconofb"
-          "icono2 info2 iconoig"
-          "icono3 info3 icono";
-        grid-template-columns: 10% 50% 40%;
-        grid-template-rows: 80px 80px 80px;
-        grid-gap: 15px;
+          "icono1 info1"
+          "icono2 info2"
+          "icono3 info3"
+          "iconofb iconoig"
+          "map map";
+        grid-template-columns: 50% 50%; 
+        grid-template-rows: auto; 
+  
+        .map {
+          margin-top: 0; 
+          margin-right: 0; 
+        }
+  
+        .iconofb,
+        .iconoig {
+          margin-top: 5%;
+        }
+  
+        .icono1,
+        .icono2,
+        .icono3{
+            margin-left: 0;
+            width: 20%; 
+            margin-top: 18%;
+
+        }
+        .iconofb,
+        .iconoig {
+          margin-left: 0;
+          width: 30%; 
+          margin-top: 20%;
+          margin-bottom: 20%;
+        }
+  
+        .info1{
+            font-size: 5rem; 
+
+        }
+        .info2,
+        .info3 {
+          font-size: 3rem; 
+          margin-top: 20%; 
+        }
       }
-    
-      .map {
-        grid-area: map;
-        margin-top: 150px;
-        margin-right: 10px;
-    
-      }
-      
-      .icono1 {
-        grid-area: icono1;
-        margin-left: 18px;
-        margin-top: 15px;
-        width: 70%;
-      }
-      
-      .icono2 {
-        grid-area: icono2;
-        margin-left: 18px;
-        margin-top: 90px;
-        width: 70%;
-      }
-      
-      .icono3 {
-        grid-area: icono3;
-        margin-left: 18px;
-        margin-top: 150px;
-      
-        width: 70%;
-      }
-      
-      .info1 {
-        grid-area: info1;
-        font-size: 4rem;
-        margin-left: 18px;
-        margin-top: 15px;
-        width: 70%;
-      
-      }
-      
-      .info2 {
-        grid-area: info2;
-        font-size: 2rem;
-        margin-top: 100px;
-        margin-top: 90px;
-      
-      
-      }
-      
-      .info3 {
-        grid-area: info3;
-        font-size: 2rem;
-        margin-top: 160px;
-      }
-      
-      .iconofb {
-        grid-area: iconofb;
-        margin-top: 50px;
-        width: 50%;
-        
-      }
-      
-      .iconoig {
-        grid-area: iconoig;
-        width: 50%;
-        padding-left: 30px;
-        
-      }
-    
-      
     }
+  }
