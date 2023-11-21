@@ -48,7 +48,7 @@ header .d-flex {
     background-size: contain;
     padding-top: 50px;
     padding-bottom: 50px;
-    width: 50%;
+    width: 80%;
   }
   header img {
     width: 120%;
@@ -113,6 +113,7 @@ p {
   }
   .our h2 {
     font-size: 6rem;
+    text-align: right;
   }
 }
 .bloques {
