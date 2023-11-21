@@ -234,15 +234,6 @@ h3 {
   color: white;
   padding: 200px;
 }
-.gov .textgov {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 7rem;
-  margin: 150px;
-  margin-bottom: 30px;
-  margin-top: 30px;
-  line-height: 1.8;
-  color: white;
-}
 
 @media screen and (max-width: 767px) {
   h3 {
@@ -264,12 +255,281 @@ h3 {
     text-align: none;
     padding: 20px;
   }
-  .gov .textgov {
+}
+.gov1 {
+  display: flex;
+}
+.gov1 .contenedordevideo .video {
+  display: flex;
+  justify-content: space-between;
+  width: 3000px;
+  height: 2000px;
+}
+
+.textgov {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 7rem;
+  margin: 150px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  line-height: 1.8;
+  color: white;
+}
+
+@media screen and (max-width: 767px) {
+  .gov1 {
+    display: inline;
+  }
+  .contenedordevideo .video {
+    display: inline;
+    justify-content: center;
+    width: 530px;
+    height: auto;
+    padding-left: 0;
+  }
+  .textgov {
     font-size: 1rem;
     margin: 10px;
     margin-bottom: 3px;
     margin-top: 3px;
     line-height: 1.8;
+  }
+}
+.previa {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 5rem;
+  margin: 5%;
+  margin-bottom: 5px;
+  margin-top: 30px;
+}
+
+.why {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10rem;
+  text-align: center;
+  color: white;
+  padding: 200px;
+  margin-top: 200px;
+}
+
+.inquiere {
+  display: flex;
+  justify-content: center;
+  padding: 150px;
+}
+
+.btn {
+  font-size: 6rem;
+  color: white;
+  border-color: white;
+  padding: 80px 120px;
+  margin-bottom: 100px;
+}
+
+.previa {
+  font-size: 5rem;
+  color: white;
+  text-decoration: none;
+}
+
+.linkletras {
+  display: flex;
+  text-align: right;
+  font-size: 7rem;
+  color: white;
+  text-decoration: none;
+  margin-right: 350px;
+  margin-top: 30px;
+  background-color: #46a92d;
+  background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .previa {
+    font-size: 3rem;
+    margin: 52%;
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+  .why {
+    font-size: 5rem;
+    text-align: none;
+    color: white;
+    padding: 20px;
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+  .inquiere {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+  }
+  .btn {
+    font-size: 2rem;
+    color: white;
+    border-color: white;
+    padding: 0px;
+    margin-bottom: 0px;
+    align-items: center;
+  }
+  .previa {
+    font-size: 5rem;
+    color: white;
+    text-decoration: none;
+  }
+  .linkletras {
+    display: flex;
+    text-align: right;
+    font-size: 5rem;
+    color: white;
+    text-decoration: none;
+    margin-right: 350px;
+    margin-top: 30px;
+    background-color: #46a92d;
+    background-size: cover;
+  }
+}
+footer {
+  background-image: url(../images/footerbackground.jpg);
+  background-size: cover;
+  height: 1500px;
+  padding-bottom: 400px;
+}
+footer h3 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: left;
+  color: white;
+}
+footer iframe {
+  top: 200px;
+  right: 0;
+  width: 1800px;
+  height: 850px;
+  margin-right: 300px;
+}
+footer .contactinfo {
+  display: grid;
+  grid-template-areas: "icono1 info1 iconofb map" "icono2 info2 iconoig map" "icono3 info3 iconoig map";
+  grid-template-columns: 10% 35% 20% 40%;
+  grid-template-rows: 500px 500px 400px;
+  grid-gap: 10px;
+}
+footer .map {
+  grid-area: map;
+  margin-top: 250px;
+  margin-right: 300px;
+}
+footer .icono1 {
+  grid-area: icono1;
+  margin-left: 180px;
+  margin-top: 90px;
+  width: 45%;
+}
+footer .icono2 {
+  grid-area: icono2;
+  margin-left: 180px;
+  width: 45%;
+}
+footer .icono3 {
+  grid-area: icono3;
+  margin-left: 180px;
+  width: 45%;
+}
+footer .info1 {
+  grid-area: info1;
+  font-size: 22rem;
+}
+footer .info2 {
+  grid-area: info2;
+  font-size: 8rem;
+  margin-top: 100px;
+}
+footer .info3 {
+  grid-area: info3;
+  font-size: 10rem;
+}
+footer .iconofb {
+  grid-area: iconogb;
+  margin-top: 150px;
+}
+footer .iconoig {
+  grid-area: iconoig;
+  margin-top: 250px;
+}
+
+@media screen and (max-width: 767px) {
+  footer {
+    background-image: url(../images/footerbackground.jpg);
+    background-size: cover;
+    height: 500px;
+  }
+  footer h3 {
+    font-size: 6rem;
+    text-align: left;
+    color: white;
+  }
+  footer iframe {
+    display: none;
+  }
+  footer .contactinfo {
+    display: grid;
+    grid-template-areas: "icono1 info1 iconofb" "icono2 info2 iconoig" "icono3 info3 icono";
+    grid-template-columns: 10% 50% 40%;
+    grid-template-rows: 80px 80px 80px;
+    grid-gap: 15px;
+  }
+  footer .map {
+    grid-area: map;
+    margin-top: 150px;
+    margin-right: 10px;
+  }
+  footer .icono1 {
+    grid-area: icono1;
+    margin-left: 18px;
+    margin-top: 15px;
+    width: 70%;
+  }
+  footer .icono2 {
+    grid-area: icono2;
+    margin-left: 18px;
+    margin-top: 90px;
+    width: 70%;
+  }
+  footer .icono3 {
+    grid-area: icono3;
+    margin-left: 18px;
+    margin-top: 150px;
+    width: 70%;
+  }
+  footer .info1 {
+    grid-area: info1;
+    font-size: 4rem;
+    margin-left: 18px;
+    margin-top: 15px;
+    width: 70%;
+  }
+  footer .info2 {
+    grid-area: info2;
+    font-size: 2rem;
+    margin-top: 100px;
+    margin-top: 90px;
+  }
+  footer .info3 {
+    grid-area: info3;
+    font-size: 2rem;
+    margin-top: 160px;
+  }
+  footer .iconofb {
+    grid-area: iconofb;
+    margin-top: 50px;
+    width: 50%;
+    padding-left: 30px;
+  }
+  footer .iconoig {
+    grid-area: iconoig;
+    width: 65px;
+    margin-left: -190px;
+    margin-top: 250px;
   }
 }
 
