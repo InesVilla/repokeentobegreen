@@ -523,13 +523,11 @@ footer .iconoig {
     grid-area: iconofb;
     margin-top: 50px;
     width: 50%;
-    padding-left: 30px;
   }
   .iconoig {
     grid-area: iconoig;
-    width: 65px;
-    margin-left: -190px;
-    margin-top: 250px;
+    width: 50%;
+    padding-left: 30px;
   }
 }
 
