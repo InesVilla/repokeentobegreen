@@ -329,11 +329,11 @@ h3 {
 }
 
 .btn {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
   border-color: white;
-  padding: 80px 120px;
-  margin-bottom: 100px;
+  padding: 30px 30px;
+  margin-bottom: 10px;
 }
 
 .previa {
@@ -864,17 +864,19 @@ input[type=radio] {
   color: white;
   padding: 3%;
 }
-.solarcalculation .botton {
-  background-color: #00938a;
-  color: white;
-  padding: 1%;
-  margin-top: 5%;
-  margin-left: 50%;
-}
 
 .calsol {
   color: white;
   font-size: 2rem;
+}
+
+.botton {
+  background-color: #00938a;
+  color: white;
+  padding: 19px;
+  margin-top: 2%;
+  font-size: 2rem;
+  margin-left: 50%;
 }
 
 .comments {
