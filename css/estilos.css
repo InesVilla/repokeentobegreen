@@ -400,12 +400,12 @@ h3 {
   }
 }
 footer {
-  background-image: url(../images/footerbackground.jpg);
+  background-image: linear-gradient(to bottom, #00938a, #009130, #46a92d);
   background-size: cover;
   height: 250px;
 }
 footer h3 {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-align: left;
   color: white;
   text-shadow: -4px 2px 7px rgba(0, 0, 0, 0.74);
@@ -670,6 +670,15 @@ footer .iconoig {
   .info {
     font-size: 1rem;
   }
+}
+
+.carousel-control-prev-icon{
+  background-color: black;
+
+}
+.carousel-control-next-icon{
+  background-color: black;
+
 }
 @media screen and (min-width: 420px) and (max-width: 800px) {
   .carousel-inner {
